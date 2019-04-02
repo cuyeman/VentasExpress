@@ -14,3 +14,4 @@ if(isset($_SESSION["aVacaciones"])){
 <html>
 ConsultaProductos
 </html>
+  
