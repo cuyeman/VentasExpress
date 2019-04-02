@@ -1,6 +1,6 @@
 <?php
-include('../lib/vacaciones.php');
-include('../lib/constantes.php');
+include('../../lib/constantes.php');
+include('../../lib/Cabecera.php');
 
 if(isset($_SESSION["aVacaciones"])){
     $arrVacaciones=$_SESSION["aVacaciones"];    

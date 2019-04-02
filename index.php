@@ -1,5 +1,6 @@
 <?php
 include('lib/constantes.php');
+include('lib/Cabecera.php');
 include('lib/vacaciones.php');
 $_SESSION["hm"]="Hola Mundo";
 
@@ -18,33 +19,56 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-        <link href="css/estiloprincipal.css" rel="stylesheet" type="text/css"/>
-    </head>
     <body>
         
         <div id="contenedor">
             <div id="titulo"></div>
             <div id="menu"><?php include('menu.php');?></div>
+            <div id="tituloContenido" >SUBTITULO</div>
             <div id="contenido"></div>
-        </div>
-        
+        </div>   
     </body>
     
     <script>
-        $("#prisolicitud").on( "click", function( event ) {
-            if(($("[id*=subsolicitud]").css("display")!="none")){
-                 $("[id*=subsolicitud]").css("display","none");
+        $("#prisolicitudA").on( "click", function( event ) {
+            if(($("[id*=subsolicitudA]").css("display")!="none")){
+                 $("[id*=subsolicitudA]").css("display","none");
             }
             else{
-                $("[id*=subsolicitud]").show();
-                $("[id*=subsolicitud]").css("display","block");
+                $("[id*=subsolicitudA]").show();
+                $("[id*=subsolicitudA]").css("display","block");
+            }
+                
+                
+            });
+        
+        $('[data-toggle="tooltip"]').tooltip(); 
+    </script>
+    
+        <script>
+        $("#prisolicitudB").on( "click", function( event ) {
+            if(($("[id*=subsolicitudB]").css("display")!="none")){
+                 $("[id*=subsolicitudB]").css("display","none");
+            }
+            else{
+                $("[id*=subsolicitudB]").show();
+                $("[id*=subsolicitudB]").css("display","block");
+            }
+                
+                
+            });
+        
+        $('[data-toggle="tooltip"]').tooltip(); 
+    </script>
+    
+        <script>
+        $("#prisolicitudC").on( "click", function( event ) {
+            if(($("[id*=subsolicitudC]").css("display")!="none")){
+                 $("[id*=subsolicitudC]").css("display","none");
+            }
+            else{
+                $("[id*=subsolicitudC]").show();
+                $("[id*=subsolicitudC]").css("display","block");
             }
                 
                 

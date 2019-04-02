@@ -42,7 +42,14 @@ a:hover{
 }
 #contenido{
    width: 70%;
-   height: 500px; 
+   height: 450px; 
    float: left;
    background: yellow;
+}
+
+#tituloContenido{
+   width: 70%;
+   height: 50px; 
+   float: left;
+   background: gold;
 }

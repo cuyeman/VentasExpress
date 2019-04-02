@@ -1,7 +1,8 @@
 <?php
 
-include('vacaciones.php');
-include('constantes.php');
+include('../../lib/constantes.php');
+include('../../lib/Cabecera.php');
+
 $ideliminar=$_POST["rut"];
 
  foreach ($_SESSION["aVacaciones"] as $key => $oVacacion) {

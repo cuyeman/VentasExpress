@@ -1,6 +1,6 @@
 <?php
-include('vacaciones.php');
-include('constantes.php');
+include('../../lib/constantes.php');
+include('../../lib/Cabecera.php');
 
 
 $oVacaciones=new Vacaciones($_POST["rut"], $_POST["nombre"], $_POST["cargo"], "", "", "");
